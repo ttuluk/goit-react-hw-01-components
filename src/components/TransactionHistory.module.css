@@ -1,7 +1,6 @@
 .transaction_history {
   table-layout: fixed;
-  width: 100%;
-  /* border: 1px solid white; */
+  width: 1024px;
   border-collapse: separate;
   background-color: white;
   text-align: center;
