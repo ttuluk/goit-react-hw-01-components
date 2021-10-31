@@ -1,5 +1,12 @@
+import users from './data/user.json';
+import statisticalData from './data/statistical-data.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
+
 import Profile from './components/Profile';
-import users from './user.json';
+import StatisticsSection from './components/StatisticsSection';
+import FriendsList from './components/FriendsList';
+import TransactionHistory from './components/TransactionHistory';
 
 function App() {
   return (
@@ -13,6 +20,9 @@ function App() {
         views={users.stats.views}
         likes={users.stats.likes}
       />
+      <StatisticsSection title="Upload stats" items={statisticalData} />;
+      <FriendsList friends={friends} />
+      <TransactionHistory trans={transactions} />
     </div>
   );
 }
