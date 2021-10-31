@@ -1,0 +1,23 @@
+.transaction_history {
+  table-layout: fixed;
+  width: 100%;
+  /* border: 1px solid white; */
+  border-collapse: separate;
+  background-color: white;
+  text-align: center;
+  color: gray;
+}
+
+.transaction_head {
+  background-color: rgb(4, 176, 182);
+  color: white;
+  margin: 0;
+  height: 50px;
+}
+
+.transaction_body {
+  height: 50px;
+}
+.transaction_body:nth-child(2n) {
+  background-color: rgb(226, 222, 222);
+}
